@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body, .font-regular{
+	@include fuente;
+}
+
+@each $k, $v in $font-weight{
+	.font-#{$k}{
+		font-family: $font;
+		font-weight: $v;
+	}
+}
+
+strong {
+	font-weight: $font-bold;
+}
+
+.font-italic, em {
+	font-style: italic;
+}
+
+.centrado {
+	text-align: center;
+}
+
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: $font-bold;
+	line-height: 1;
+	color: $color-claro;
+	margin-bottom: 2.5rem;
+	text-align: center;
+}
+
+h2 {
+	font-weight: $font-regular;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	color: $color-detalle;
+}
+h3 {
+	color: #1f033a;
+	font-weight: $font-bold;
+	font-size: 2rem;
+	margin-bottom: 2.5rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h4 {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+p {
+	font-size: 1rem;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacto - Cine a las Piñas - Andrés Hernández</title>
+	<meta charset=utf-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="El formulario de contacto de Cine a las Piñas, comentá, sugerí, saludanos.">
+	<meta name="keywords"  content="CINE, PODACAST, PELICULAS, CONTACTO, AMIGOS">
+	<link rel="icon" href="media/favicon.ico"> 
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div id="abrirMenu" onclick="myClick()">MENU<i class="fas fa-angle-down"></i></div>
+			<a href="index.html" id="logo"><img src="media/logo.png" alt="Inicio - Podcast"></a>
+			<ul id="menuPrincipal" class="listadoMenu">
+				<li class="menuClose" onclick="myClick()"><i class="fas fa-angle-up"></i>CERRAR MENU</li>
+				<li class="menuHome"><a href="index.html">Home</a></li>
+				<li><a href="programas.html">Programas</a></li>
+				<li><a href="integrantes.html">Integrantes</a></li>
+				<li><a href="novedades.html">Novedades</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<ul class="redesList">
+			<li><a href="#"><i class="fab fa-spotify"></i></a></li>
+			<li><a href="#"><i class="fa fa-podcast"></i></a></li>
+			<li><a href="#"><i class="fab fa-google"></i></a></li>
+			<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+		</ul>
+	</header>
+	<section class="sectionMain backDark">
+		<div class="container">
+			<h1 class="text-center">Contacto</h1>
+			<div class="row">
+				<div class="col-lg-6 columna-texto">
+					<p class="columna-texto__parrafo">Esperamos que te esté gustando el Podcast! Si querés dejarnos alguna sugerencia, preguntarnos algo, comentarnos de qué te gustaría que hablemos, o ser parte de Cine a las Piñas, completá el formulario y te vamos a contactar más pronto que tarde. O más tarde que pronto.. en algún momento! Gracias por estar ahí, por entrar a este sitio y por no insultarnos, por favor.</p>
+					<p class="columna-texto__parrafo columna-texto__parrafo--italic"><em>El quipo de Cine a las Piñas.</em></p>
+				</div>
+				<div class="col-lg-6 columna-form">
+					<form action="contacto.html" method="GET" class="p-4 mb-5 backDark formulario">
+						<div class="form-group">
+							<label for="campo_motivo" class="form-group__label">¿Por qué querés contactarnos?</label>
+							<select class="form-control form-group__select" name="campo_motivo" id="campo_motivo">
+								<option value="Participar">Quiero ser parte del Equipo!</option>
+								<option value="Sugerencia">Sugerencia</option>
+								<option value="Contenido">Me gustaría que hablen de esto!</option>
+								<option value="Otros">Otros</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="nombreUsuario" class="form-group__label">¿Nombre, Nickname, Avatar o Apodo familiar?</label>
+							<input type="email" name="campo_mail" class="form-control" id="nombreUsuario" placeholder="Nombre">
+						</div>
+						<div class="form-group">
+							<label for="mailUsuario" class="form-group__label">¿Un mail pa' contactarte porfa?</label>
+							<input type="email" name="campo_mail" class="form-control" id="mailUsuario" placeholder="ejemplo@tumail.com" aria-describedby="emailHelp">
+							<small id="emailHelp" class="form-text text-muted">No vamos a compartir tu información con naiiiidies.</small>
+						</div>
+						<div class="form-group">
+							<p class="form-group__parrafo">¿Cómo conociste el programa?</p>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="campo_referente" id="op1" value="Conocidos">
+								<label class="form-check-label" for="op1">Conocidos</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="campo_referente" id="op2" value="Redes">
+								<label class="form-check-label" for="op2">Redes</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="campo_referente" id="op3" value="Spoti">
+								<label class="form-check-label" for="op3">Donde escuchás tus podcasts</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="campo_referente" id="op4" value="Google">
+								<label class="form-check-label" for="op4">Google</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="campo_referente" id="op5" value="Otro">
+								<label class="form-check-label" for="op5">Otro</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="campo_referente" id="op6" value="No sabe">
+								<label class="form-check-label" for="op6">No los conozco, voy a esuchar ahora mismo</label>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="textoUsuario" class="form-group__label">¿Y qué querés comentarnos?</label>
+							<textarea class="form-control" name="campo_mensaje" id="textoUsuario" rows="3"></textarea>
+						</div>
+
+						<button type="submit" class="btn btn-primary btnSubmit" name="enviar" value="ENVIAR">Enviar</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footerPlay">
+			<iframe src="https://anchor.fm/cine-a-las-pinas/embed/episodes/Captulo-4---Mi-vecino-Totoro-enq020" width="100%" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div class="footerInfo">
+			<p class="footerInfo__parrafo"><strong>Cine a las Piñas:</strong> Un podcast de Cine, análisis, humor, y muuuy poca violencia a pesar del título.</p>
+			<ul class="redesList footerInfo__redesList">
+				<li class="redesList__item">
+					<a href="#"><i class="fab fa-spotify"></i></a>
+				</li>
+				<li class="redesList__item">
+					<a href="#"><i class="fa fa-podcast"></i></a>
+				</li>
+				<li class="redesList__item">
+					<a href="#"><i class="fab fa-google"></i></a>
+				</li>
+				<li class="redesList__item">
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		function myClick() {
+			var element = document.getElementById("menuPrincipal");
+			if(element.classList.contains("menuPrincipal--visible")){
+			element.classList.remove("menuPrincipal--visible");
+			}else{
+			element.classList.add("menuPrincipal--visible");
+			}
+		}
+	</script>
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

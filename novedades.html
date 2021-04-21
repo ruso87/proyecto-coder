@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Novedades - Cine a las Piñas</title>
+	<meta charset=utf-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Las últimas novedades que teníamos ganas de contarte.">
+	<meta name="keywords"  content="CINE, PODACST, PELICULAS, ANALISIS, NOTICIAS, NOVEDADES, DIVERSIÓN">
+	<link rel="icon" href="media/favicon.ico"> 
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div id="abrirMenu" onclick="myClick()">MENU<i class="fas fa-angle-down"></i></div>
+			<a href="index.html" id="logo"><img src="media/logo.png" alt="Inicio - Podcast"></a>
+			<ul id="menuPrincipal" class="listadoMenu">
+				<li class="menuClose" onclick="myClick()"><i class="fas fa-angle-up"></i>CERRAR MENU</li>
+				<li class="menuHome"><a href="index.html">Home</a></li>
+				<li><a href="programas.html">Programas</a></li>
+				<li><a href="integrantes.html">Integrantes</a></li>
+				<li><a href="novedades.html">Novedades</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<ul class="redesList">
+			<li><a href="#"><i class="fab fa-spotify"></i></a></li>
+			<li><a href="#"><i class="fa fa-podcast"></i></a></li>
+			<li><a href="#"><i class="fab fa-google"></i></a></li>
+			<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+		</ul>
+	</header>
+	<section class="sectionMain mainNovedades backDark">
+		<div class="columnaOchenta">
+			<h1 class="centrado">Novedades</h1>
+			<div class="columnas dosColumnas">
+				<img src="media/novedades/wonder-woman-550.jpg" alt="Se estrena Wonder Woman">
+				<div class="dosColumnas__segundaCol">
+					<h2>Se estrena Wonder Woman</h2>
+					<p>Diana Prince, conocida como Wonder Woman se enfrenta a Cheetah, una villana que posee fuerza y agilidad sobrehumanas.</p>
+				</div>
+			</div>
+			<div class="columnas dosColumnas">
+				<img src="media/novedades/oscars-550.jpg" alt="Todos los nominados de los Premios Oscar 2021">
+				<div class="dosColumnas__segundaCol">
+					<h2>Y los nominados son..</h2>
+					<p>Este año los Oscars han nominado a un total de 41 películas entre las que no están títulos como 'Nunca, casi nunca, a veces, siempre', 'First Cow', 'The Mauritanian', 'Palm Springs', 'Estoy pensando en dejarlo' o 'El hombre invisible' (todas ellas pasan a engrosar la lista de aspirantes al #NoOscarFest6).</p>
+				</div>
+			</div>
+			<div class="columnas dosColumnas">
+				<img src="media/novedades/zack-550.jpg" alt="Qué nos pareció el ultimo manotazo de ahogado de DC.">
+				<div class="dosColumnas__segundaCol">
+					<h2>¿Qué onda la Liga de la Justicia de Zack Snyder?</h2>
+					<p>Comúnmente conocida como Snyder Cut, es una versión del director de la película estadounidense de superhéroes, Liga de la Justicia de 2017. Esta versión de 4 horas de duración es la visión original del director Zack Snyder antes de tener que realizar los cambios estipulados por el estudio y posteriormente abandonar la producción en 2017. Nos pareció horrible. Todo DC apesta.</p>
+				</div>
+			</div>
+			<div class="columnas dosColumnas">
+				<img src="media/novedades/oscars-550.jpg" alt="Todos los nominados de los Premios Oscar 2021">
+				<div class="dosColumnas__segundaCol">
+					<h2>Y los nominados son..</h2>
+					<p>Este año los Oscars han nominado a un total de 41 películas entre las que no están títulos como 'Nunca, casi nunca, a veces, siempre', 'First Cow', 'The Mauritanian', 'Palm Springs', 'Estoy pensando en dejarlo' o 'El hombre invisible' (todas ellas pasan a engrosar la lista de aspirantes al #NoOscarFest6).</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footerPlay">
+			<iframe src="https://anchor.fm/cine-a-las-pinas/embed/episodes/Captulo-4---Mi-vecino-Totoro-enq020" width="100%" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div class="footerInfo">
+			<p class="footerInfo__parrafo"><strong>Cine a las Piñas:</strong> Un podcast de Cine, análisis, humor, y muuuy poca violencia a pesar del título.</p>
+			<ul class="redesList footerInfo__redesList">
+				<li class="redesList__item">
+					<a href="#"><i class="fab fa-spotify"></i></a>
+				</li>
+				<li class="redesList__item">
+					<a href="#"><i class="fa fa-podcast"></i></a>
+				</li>
+				<li class="redesList__item">
+					<a href="#"><i class="fab fa-google"></i></a>
+				</li>
+				<li class="redesList__item">
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		function myClick() {
+			var element = document.getElementById("menuPrincipal");
+			if(element.classList.contains("menuPrincipal--visible")){
+			element.classList.remove("menuPrincipal--visible");
+			}else{
+			element.classList.add("menuPrincipal--visible");
+			}
+		}
+	</script>
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

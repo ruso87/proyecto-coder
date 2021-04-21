@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Programas - Cine a las Piñas</title>
+	<meta charset=utf-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Escuchate todo Cine a las Piñas desde el capítulo cero y sé una persona más feliz.">
+	<meta name="keywords"  content="CINE, PODACAST, PELICULAS, ANALISIS, RELAJADO, ENTRETENIMIENTO, AMIGOS, PROGRAMAS, HISTORIAL">
+	<link rel="icon" href="media/favicon.ico"> 
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div id="abrirMenu" onclick="myClick()">MENU<i class="fas fa-angle-down"></i></div>
+			<a href="index.html" id="logo"><img src="media/logo.png" alt="Inicio - Podcast"></a>
+			<ul id="menuPrincipal" class="listadoMenu">
+				<li class="menuClose" onclick="myClick()"><i class="fas fa-angle-up"></i>CERRAR MENU</li>
+				<li class="menuHome"><a href="index.html">Home</a></li>
+				<li><a href="programas.html">Programas</a></li>
+				<li><a href="integrantes.html">Integrantes</a></li>
+				<li><a href="novedades.html">Novedades</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<ul class="redesList">
+			<li><a href="#"><i class="fab fa-spotify"></i></a></li>
+			<li><a href="#"><i class="fa fa-podcast"></i></a></li>
+			<li><a href="#"><i class="fab fa-google"></i></a></li>
+			<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+		</ul>
+	</header>
+	<section class="sectionMain backDark">
+		<div class="columnaOchenta">
+			<h1 class="centrado">Programas</h1>
+			<div class="grilla centrado">
+				<div>
+					<a href="programas.html">
+						<img src="media/programas/05-pelea-550.jpg" alt="Capitulo 5 - El Club de la Pelea">
+						<h4>Capitulo 5 - El Club de la Pelea</h4>
+					</a>
+				</div>
+				<div>
+					<a href="programas.html">
+						<img src="media/programas/04-totoro-550.jpg" alt="Capitulo 4 - Mi Vecino Totoro">
+						<h4>Capitulo 4 - Mi Vecino Totoro</h4>
+					</a>
+				</div>
+				<div>
+					<a href="programas.html">
+						<img src="media/programas/03-matrix-550.jpg" alt="Capitulo 3 - La Trilogía Matrix">
+						<h4>Capitulo 3 - La Trilogía Matrix</h4>
+					</a>
+				</div>
+				<div>
+					<a href="programas.html">
+						<img src="media/programas/02-aura-550.jpg" alt="Capitulo 2 - El Aura">
+						<h4>Capitulo 2 - El Aura</h4>
+					</a>
+				</div>
+				<div>
+					<a href="programas.html">
+						<img src="media/programas/01-dama-y-vag-550.jpg" alt="Capitulo -1 - El Origen menos Uno">
+						<h4>Capitulo 1 - El Origen</h4>
+					</a>
+				</div>
+				<div>
+					<a href="programas.html">
+						<img src="media/programas/00-sexto-550.jpg" alt="Capitulo 0 - Sexto Sentido">
+						<h4>Capitulo 0 - Sexto Sentido</h4>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footerPlay">
+			<iframe src="https://anchor.fm/cine-a-las-pinas/embed/episodes/Captulo-4---Mi-vecino-Totoro-enq020" width="100%" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div class="footerInfo">
+			<p class="footerInfo__parrafo"><strong>Cine a las Piñas:</strong> Un podcast de Cine, análisis, humor, y muuuy poca violencia a pesar del título.</p>
+			<ul class="redesList footerInfo__redesList">
+				<li class="redesList__item">
+					<a href="#"><i class="fab fa-spotify"></i></a>
+				</li>
+				<li class="redesList__item">
+					<a href="#"><i class="fa fa-podcast"></i></a>
+				</li>
+				<li class="redesList__item">
+					<a href="#"><i class="fab fa-google"></i></a>
+				</li>
+				<li class="redesList__item">
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		function myClick() {
+			var element = document.getElementById("menuPrincipal");
+			if(element.classList.contains("menuPrincipal--visible")){
+			element.classList.remove("menuPrincipal--visible");
+			}else{
+			element.classList.add("menuPrincipal--visible");
+			}
+		}
+	</script>
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
