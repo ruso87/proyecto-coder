@@ -185,7 +185,7 @@ header {
   transform: translateY(-100vh);
 }
 
-#menuPrincipal.menuPrincipal--visible {
+#menuPrincipal.visible {
   transform: translateY(0);
 }
 
@@ -296,7 +296,8 @@ header {
 
 /*FOOTER*/
 footer {
-  display: inline-block;
+  display: flex;
+  flex-flow: column wrap;
   width: 100%;
   padding: 20px 45px;
   background: #1f033a;
@@ -308,11 +309,15 @@ footer div {
   width: 100%;
 }
 
-footer .footerInfo .footerInfo__parrafo {
+footer .footerPlay iframe {
+  height: 110px;
+}
+
+footer .footerInfo p {
   margin-bottom: 15px;
 }
 
-footer .footerInfo .footerInfo__redesList {
+footer .footerInfo .redesList {
   display: none;
 }
 
@@ -321,7 +326,7 @@ footer .footerInfo .footerInfo__redesList {
   padding-top: 0;
 }
 
-.indexMain .indexMain__titulo {
+.indexMain h1 {
   font-size: 2em;
   background: #22073d;
   padding: .5em;
@@ -342,19 +347,15 @@ footer .footerInfo .footerInfo__redesList {
   align-items: center;
 }
 
-.carousel-item.carousel-item--primer-slide {
+.carousel-item.primer-slide {
   background-image: url(../media/backgrounds/back-fightclub-1920.jpg);
 }
 
-.carousel-item.carousel-item--segundo-slide {
+.carousel-item.segundo-slide {
   background-image: url(../media/backgrounds/back-totoro-1920.jpg);
 }
 
-.carousel-item.carousel-item--trecer-slide {
-  background-image: url(../media/backgrounds/back-fightclub-1920.jpg);
-}
-
-.carousel-item.carousel-item--cuarto-slide {
+.carousel-item.trecer-slide {
   background-image: url(../media/backgrounds/back-fightclub-1920.jpg);
 }
 
@@ -388,19 +389,19 @@ footer .footerInfo .footerInfo__redesList {
   margin-bottom: 30px;
 }
 
-.indexMain__integrantes h4 {
+.indexIntegrantes h4 {
   font-size: 2.5rem;
   line-height: 1;
   font-weight: 400;
 }
 
-.indexMain__integrantes p {
+.indexIntegrantes p {
   font-size: 1.1rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
 
-.indexMain__integrantes img {
+.indexIntegrantes img {
   margin-bottom: 1rem;
 }
 
@@ -410,25 +411,25 @@ footer .footerInfo .footerInfo__redesList {
   margin-bottom: 2rem;
 }
 
-.grilla .grilla-link {
+.grilla a {
   display: inline-block;
   padding: 1rem;
 }
 
-.grilla .grilla-link:hover {
+.grilla a:hover {
   color: #22073d;
 }
 
-.grilla .grilla-link .grilla-link__img {
+.grilla a img {
   margin-bottom: 10px;
 }
 
-.grilla .grilla-link:hover .grilla-link__img {
+.grilla a:hover img {
   transform: scale(1.05);
   box-shadow: 0 0 5px 0 rgba(125, 125, 125, 0.6);
 }
 
-.grilla .grilla-link .grilla-link__titulo {
+.grilla a h4 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -446,12 +447,12 @@ footer .footerInfo .footerInfo__redesList {
   flex-direction: row-reverse;
 }
 
-.mainIntegrantes .dosColumnas:nth-child(odd) .dosColumnas__segundaCol {
+.mainIntegrantes .dosColumnas:nth-child(odd) .segundaCol {
   flex-grow: 1;
   padding: 0 45px 0 0;
 }
 
-.mainIntegrantes .dosColumnas:nth-child(even) .dosColumnas__segundaCol {
+.mainIntegrantes .dosColumnas:nth-child(even) .segundaCol {
   padding-left: 45px;
 }
 
@@ -521,10 +522,12 @@ footer .footerInfo .footerInfo__redesList {
     padding: 0;
     margin-left: 10px;
   }
-  footer .footerInfo .footerInfo__redesList {
+  footer .footerInfo .redesList {
     display: flex;
+    justify-content: center;
+    padding: 0;
   }
-  footer .footerInfo .footerInfo__redesList li {
+  footer .footerInfo .redesList li {
     margin-right: 10px;
     margin-left: 0;
   }
@@ -541,13 +544,13 @@ footer .footerInfo .footerInfo__redesList {
     text-align: left;
     align-items: center;
   }
-  .dosColumnas .dosColumnas__primerCol {
+  .dosColumnas .primerCol {
     min-width: 365px;
   }
-  .dosColumnas .dosColumnas__primerCol .dosColumnas__primerCol img {
+  .dosColumnas .primerCol .primerCol img {
     max-width: 365px;
   }
-  .dosColumnas .dosColumnas__segundaCol {
+  .dosColumnas .segundaCol {
     padding-left: 45px;
   }
   h1 {
@@ -557,12 +560,12 @@ footer .footerInfo .footerInfo__redesList {
   h3 {
     font-size: 2.5rem;
   }
-  .footerPlay {
-    width: 75%;
+  footer .footerPlay iframe {
+    height: 100px;
   }
-  .footerInfo {
-    width: 25%;
+  footer .footerInfo {
     padding: 15px;
+    text-align: center;
   }
   .carousel-item {
     height: calc(100vh - 5em);
@@ -571,7 +574,7 @@ footer .footerInfo .footerInfo__redesList {
   .carousel-control-next, .carousel-control-prev {
     display: flex;
   }
-  .indexMain .indexMain__titulo {
+  .indexMain h1 {
     font-size: 2.5em;
   }
   .contenidoEstreno {
@@ -590,6 +593,13 @@ footer .footerInfo .footerInfo__redesList {
   }
   .grilla {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*MEDIA QUERIES - REPRODUCTOR FOOTER*/
+@media all and (min-width: 859px) {
+  footer .footerPlay iframe {
+    height: 161px;
   }
 }
 

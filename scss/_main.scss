@@ -102,13 +102,13 @@ header {
 	z-index: 100;
 	height: 100vh;
 	width: 100vw;
-    padding: 0;
+	padding: 0;
 	background: $color-oscuro;
 	background: linear-gradient(180deg, rgba(31,3,58,1) 10%, rgba(67,43,89,1) 100%);
 	text-align: center;
 	transform: translateY(-100vh);
 
-	&.menuPrincipal--visible {
+	&.visible {
 		transform: translateY(0);
 	}
 
@@ -206,7 +206,8 @@ header {
 
 /*FOOTER*/
 footer {
-	display: inline-block;
+	display: flex;
+    flex-flow: column wrap;
 	width: 100%;
 	padding: 20px 45px;
 	background: #1f033a;
@@ -215,11 +216,14 @@ footer {
 		float: left;
 		width: 100%;
 	}
+	.footerPlay iframe {
+		height: 110px;
+	}
 	.footerInfo {
-		.footerInfo__parrafo {
+		p {
 		margin-bottom: 15px;
 		}
-		.footerInfo__redesList {
+		.redesList {
 			display: none;
 		}
 	}
@@ -228,7 +232,7 @@ footer {
 /*INDEX*/
 .indexMain {
 	padding-top: 0;
-	.indexMain__titulo {
+	h1 {
 		font-size: 2em;
 		background: #22073d;
 		padding: .5em;
@@ -245,19 +249,16 @@ footer {
 	padding-top: 140px;
 	background-size: cover;
 	background-position: center;
-    align-items: center;
-    &.carousel-item--primer-slide {
-    	background-image: $back-img-slide-uno
-    }
-    &.carousel-item--segundo-slide {
-    	background-image: $back-img-slide-dos
-    }
-    &.carousel-item--trecer-slide {
-    	background-image: $back-img-slide-tres
-    }
-    &.carousel-item--cuarto-slide {
-    	background-image: $back-img-slide-cuatro
-    }
+	align-items: center;
+	&.primer-slide {
+		background-image: $back-img-slide-uno
+	}
+	&.segundo-slide {
+		background-image: $back-img-slide-dos
+	}
+	&.trecer-slide {
+		background-image: $back-img-slide-tres
+	}
 }
 .carousel-control-next, .carousel-control-prev {
 	top: 50px;
@@ -285,7 +286,7 @@ footer {
 	margin-bottom: 30px;
 }
 
-.indexMain__integrantes{
+.indexIntegrantes{
 	h4 {
 		font-size: 2.5rem;
 		line-height: 1;
@@ -305,20 +306,20 @@ footer {
 	display: grid;
 	grid-template-columns: 1fr;
 	margin-bottom: 2rem;
-	.grilla-link {
+	a {
 		display: inline-block;
 		padding: 1rem;
 		&:hover{
 			color: $color-oscuro;
 		}
-		.grilla-link__img {
+		img {
 			margin-bottom: 10px;
 		}
-		&:hover .grilla-link__img {
+		&:hover img {
 			transform: scale(1.05);
 			box-shadow: 0 0 5px 0 rgba(125,125,125,0.6);
 		}
-		.grilla-link__titulo {
+		h4 {
 			font-size: 1.2rem;
 			margin-bottom: 1rem;
 		}
@@ -336,12 +337,12 @@ footer {
 		display: flex;
 		&:nth-child(odd) {
 			flex-direction: row-reverse;
-			.dosColumnas__segundaCol {
+			.segundaCol {
 				flex-grow: 1;
 				padding: 0 45px 0 0;
 			}
 		}
-		&:nth-child(even) .dosColumnas__segundaCol {
+		&:nth-child(even) .segundaCol {
 			padding-left: 45px;
 		}
 		img {

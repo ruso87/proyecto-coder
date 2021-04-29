@@ -15,8 +15,10 @@
 	}
 	footer {
 		.footerInfo{
-			.footerInfo__redesList {
+			.redesList {
 				display: flex;
+				justify-content: center;
+				padding: 0;
 				li {
 					margin-right: 10px;
 					margin-left: 0;
@@ -39,13 +41,13 @@
 		display: flex;
 		text-align: left;
 		align-items: center;
-		.dosColumnas__primerCol {
+		.primerCol {
 			min-width: 365px;
-			.dosColumnas__primerCol img{
+			.primerCol img{
 				max-width: 365px;
 			}
 		}
-		.dosColumnas__segundaCol {
+		.segundaCol {
 			padding-left: 45px;
 		}
 	}
@@ -57,14 +59,15 @@
 	h3 {
 		font-size: 2.5rem;
 	}
-	.footerPlay {
-		width: 75%;
+	footer {
+		.footerPlay iframe {
+			height: 100px;
+		}
+		.footerInfo {
+			padding: 15px;
+			text-align: center;
+		}
 	}
-	.footerInfo {
-		width: 25%;
-		padding: 15px;
-	}
-
 	.carousel-item {
 		height: calc(100vh - 5em);
 		padding-top: 100px;
@@ -73,7 +76,7 @@
 		display: flex;
 	}
 	.indexMain {
-		.indexMain__titulo {
+		h1 {
 			font-size: 2.5em;
 		}
 	}
@@ -96,6 +99,16 @@
 	}
 }
 
+/*MEDIA QUERIES - REPRODUCTOR FOOTER*/
+
+@media all and (min-width: 859px){
+	footer {
+		.footerPlay iframe {
+			height: 161px;
+		}
+	}
+
+}
 /*MEDIA QUERIES - DESKTOP*/
 
 @media all and (min-width: 1200px){
