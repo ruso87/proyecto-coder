@@ -623,4 +623,8 @@ footer .footerInfo .redesList {
   #abrirMenu, #menuPrincipal li.menuHome, #menuPrincipal li.menuClose {
     display: none;
   }
+  .seccion {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
 }
