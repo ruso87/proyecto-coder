@@ -21,10 +21,13 @@ a {
 .columnas {
 	display: inline-block;
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 2.5rem;
 }
 .dosColumnas {
 	text-align: center;
+	img {
+		margin-bottom: 1rem;
+	}
 }
 
 .sectionMain {
@@ -297,9 +300,6 @@ footer {
 		font-weight: $font-regular;
 		margin-bottom: 1.5rem;
 	}
-	img {
-		margin-bottom: 1rem;
-	}
 }
 
 .grilla {
@@ -332,23 +332,13 @@ footer {
 
 /*INTERNAS - INTEGRANTES*/
 
-.mainIntegrantes{
-	.dosColumnas {
-		display: flex;
-		&:nth-child(odd) {
-			flex-direction: row-reverse;
-			.segundaCol {
-				flex-grow: 1;
-				padding: 0 45px 0 0;
-			}
-		}
-		&:nth-child(even) .segundaCol {
-			padding-left: 45px;
-		}
-		img {
-			width: 100%;
-			max-width: 300px;
-		}
+.mainIntegrantes .dosColumnas {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	img {
+		width: 100%;
+		max-width: 300px;
 	}
 }
 
@@ -359,7 +349,7 @@ footer {
 	max-width: 100%;
 }
 
-/*INTERNAS - FORMULARIO*/
+/*INTERNAS - CONTACTO*/
 
 .columna-texto {
 	.columna-texto__parrafo {
@@ -382,6 +372,9 @@ footer {
 .formulario {
 	padding: 20px 30px;
 	text-align: left;
+	textarea {
+		resize: none !important;
+	}
 	.btnSubmit {
 		font-family: $font;
 		font-weight: $font-regular;

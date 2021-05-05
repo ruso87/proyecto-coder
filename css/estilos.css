@@ -90,11 +90,15 @@ a:hover {
 .columnas {
   display: inline-block;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 2.5rem;
 }
 
 .dosColumnas {
   text-align: center;
+}
+
+.dosColumnas img {
+  margin-bottom: 1rem;
 }
 
 .sectionMain {
@@ -401,10 +405,6 @@ footer .footerInfo .redesList {
   margin-bottom: 1.5rem;
 }
 
-.indexIntegrantes img {
-  margin-bottom: 1rem;
-}
-
 .grilla {
   display: grid;
   grid-template-columns: 1fr;
@@ -441,19 +441,8 @@ footer .footerInfo .redesList {
 /*INTERNAS - INTEGRANTES*/
 .mainIntegrantes .dosColumnas {
   display: flex;
-}
-
-.mainIntegrantes .dosColumnas:nth-child(odd) {
-  flex-direction: row-reverse;
-}
-
-.mainIntegrantes .dosColumnas:nth-child(odd) .segundaCol {
-  flex-grow: 1;
-  padding: 0 45px 0 0;
-}
-
-.mainIntegrantes .dosColumnas:nth-child(even) .segundaCol {
-  padding-left: 45px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .mainIntegrantes .dosColumnas img {
@@ -467,7 +456,7 @@ footer .footerInfo .redesList {
   max-width: 100%;
 }
 
-/*INTERNAS - FORMULARIO*/
+/*INTERNAS - CONTACTO*/
 .columna-texto .columna-texto__parrafo {
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -488,6 +477,10 @@ footer .footerInfo .redesList {
 .formulario {
   padding: 20px 30px;
   text-align: left;
+}
+
+.formulario textarea {
+  resize: none !important;
 }
 
 .formulario .btnSubmit {
@@ -593,6 +586,19 @@ footer .footerInfo .redesList {
   }
   .grilla {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .mainIntegrantes .dosColumnas {
+    flex-wrap: nowrap;
+  }
+  .mainIntegrantes .dosColumnas:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  .mainIntegrantes .dosColumnas:nth-child(odd) .segundaCol {
+    flex-grow: 1;
+    padding: 0 45px 0 0;
+  }
+  .mainIntegrantes .dosColumnas:nth-child(even) .segundaCol {
+    padding-left: 45px;
   }
 }
 

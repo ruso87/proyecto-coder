@@ -97,6 +97,20 @@
 	.grilla {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
+	.mainIntegrantes .dosColumnas{
+		flex-wrap: nowrap;
+		&:nth-child(odd) {
+			flex-direction: row-reverse;
+			.segundaCol {
+				flex-grow: 1;
+				padding: 0 45px 0 0;
+			}
+		}
+		&:nth-child(even) .segundaCol {
+			padding-left: 45px;
+		}
+
+	}
 }
 
 /*MEDIA QUERIES - REPRODUCTOR FOOTER*/
