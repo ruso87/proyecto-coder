@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="El formulario de contacto de Cine a las Piñas, comentá, sugerí, saludanos.">
 	<meta name="keywords"  content="CINE, PODACAST, PELICULAS, CONTACTO, AMIGOS">
-	<link rel="icon" href="media/favicon.ico"> 
+	<link rel="icon" type="image/png" href="media/favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
@@ -118,44 +118,45 @@
 		function myClick() {
 			var element = document.getElementById("menuPrincipal");
 			if(element.classList.contains("visible")){
-			element.classList.remove("visible");
+				element.classList.remove("visible");
 			}else{
-			element.classList.add("visible");
+				element.classList.add("visible");
 			}
 		}
 		// Modificación del menú en scroll
 		window.onscroll = function() {scrollFunction()};
-
 		function scrollFunction() {
-		  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-		    document.getElementById("header").style.height = "75px";
-		    document.getElementById("logo").style.width = "100px";
-		    document.getElementById("logo").style.left = "calc(50% - 50px)";
-		  } else {
-		    document.getElementById("header").style.height = "105px";
-		    document.getElementById("logo").style.width = "150px";
-		    document.getElementById("logo").style.left = "calc(50% - 75px)";
-		  }
+			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+				document.getElementById("header").style.height = "75px";
+				document.getElementById("header").style.background = "rgba(31,3,58,0.8)";
+				document.getElementById("logo").style.width = "100px";
+				document.getElementById("logo").style.left = "calc(50% - 50px)";
+			} else {
+				document.getElementById("header").style.height = "105px";
+				document.getElementById("header").style.background = "none";
+				document.getElementById("logo").style.width = "150px";
+				document.getElementById("logo").style.left = "calc(50% - 75px)";
+			}
 		}
-	    // Example starter JavaScript for disabling form submissions if there are invalid fields
-	    (function() {
-	      'use strict';
-	      window.addEventListener('load', function() {
-	        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-	        var forms = document.getElementsByClassName('needs-validation');
-	        // Loop over them and prevent submission
-	        var validation = Array.prototype.filter.call(forms, function(form) {
-	          form.addEventListener('submit', function(event) {
-	            if (form.checkValidity() === false) {
-	              event.preventDefault();
-	              event.stopPropagation();
-	            }
-	            form.classList.add('was-validated');
-	          }, false);
-	        });
-	      }, false);
-	    })();
-    </script>
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function() {
+			'use strict';
+			window.addEventListener('load', function() {
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				var forms = document.getElementsByClassName('needs-validation');
+				// Loop over them and prevent submission
+				var validation = Array.prototype.filter.call(forms, function(form) {
+					form.addEventListener('submit', function(event) {
+					if (form.checkValidity() === false) {
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					form.classList.add('was-validated');
+					}, false);
+				});
+			}, false);
+		})();
+	</script>
 
 	</script>
 	<script src="js/jquery-3.5.1.slim.min.js"></script>

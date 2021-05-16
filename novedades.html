@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Las últimas novedades que teníamos ganas de contarte.">
 	<meta name="keywords"  content="CINE, PODACST, PELICULAS, ANALISIS, NOTICIAS, NOVEDADES, DIVERSIÓN">
-	<link rel="icon" href="media/favicon.ico"> 
+	<link rel="icon" type="image/png" href="media/favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
@@ -36,31 +36,31 @@
 		<div class="columnaOchenta">
 			<h1 class="centrado">Novedades</h1>
 			<div class="columnas dosColumnas">
+				<img src="media/novedades/mk-550.jpg" alt="Estreno de Mortal Kombat 2021">
+				<div class="segundaCol">
+					<h2>Mortal Kombat 2021</h2>
+					<p>¡Este 2021 viene con noticias! No sabemos si era necesario pero la gente de Warner Media, dueña de la franquicia de videojuegos desde 2010, finalmente terminó de armar su propia versión de la saga. Lo que servirá como un reinicio de las películas de los '90s, y esperamos que sea un triunfo de los nuevos '20s, nos hace pensar que este puede ser el principio de un fructífero camino para el Combate Mortal, que según el poster adelanto, puede ser tranquilamente una competencia del "Team Verano" contra el "Team Invierno".</p>
+				</div>
+			</div>
+			<div class="columnas dosColumnas">
 				<img src="media/novedades/wonder-woman-550.jpg" alt="Se estrena Wonder Woman">
 				<div class="segundaCol">
 					<h2>Se estrena Wonder Woman</h2>
-					<p>Diana Prince, conocida como Wonder Woman se enfrenta a Cheetah, una villana que posee fuerza y agilidad sobrehumanas.</p>
+					<p>Diana Prince, conocida como Wonder Woman se enfrenta a Cheetah, una villana que posee fuerza y agilidad sobrehumanas. Desde Cine a las Piñas no podemos más de la manija. Como buenos fanáticos mitad Marvel y mitad DC, esta es una peli que promete y que todos los bandos de la grita esperan con ansiedad!</p>
 				</div>
 			</div>
 			<div class="columnas dosColumnas">
 				<img src="media/novedades/oscars-550.jpg" alt="Todos los nominados de los Premios Oscar 2021">
 				<div class="segundaCol">
 					<h2>Y los nominados son..</h2>
-					<p>Este año los Oscars han nominado a un total de 41 películas entre las que no están títulos como 'Nunca, casi nunca, a veces, siempre', 'First Cow', 'The Mauritanian', 'Palm Springs', 'Estoy pensando en dejarlo' o 'El hombre invisible' (todas ellas pasan a engrosar la lista de aspirantes al #NoOscarFest6).</p>
+					<p>Este año los Oscars nominaron a un total de 41 películas entre las que no están títulos como 'Nunca, casi nunca, a veces, siempre', 'First Cow', 'The Mauritanian', 'Palm Springs', 'Estoy pensando en dejarlo' o 'El hombre invisible' (todas ellas pasan a engrosar la lista de aspirantes al #NoOscarFest6). Desde CALP sostenemos que la maravilla de 'Palm Springs' y el gran Andy Samberg merecían por lo menos una mención por parte de Oscarcito, pero parece que esta vez no podrá ser.</p>
 				</div>
 			</div>
 			<div class="columnas dosColumnas">
 				<img src="media/novedades/zack-550.jpg" alt="Qué nos pareció el ultimo manotazo de ahogado de DC.">
 				<div class="segundaCol">
 					<h2>¿Qué onda la Liga de la Justicia de Zack Snyder?</h2>
-					<p>Comúnmente conocida como Snyder Cut, es una versión del director de la película estadounidense de superhéroes, Liga de la Justicia de 2017. Esta versión de 4 horas de duración es la visión original del director Zack Snyder antes de tener que realizar los cambios estipulados por el estudio y posteriormente abandonar la producción en 2017. Nos pareció horrible. Todo DC apesta.</p>
-				</div>
-			</div>
-			<div class="columnas dosColumnas">
-				<img src="media/novedades/oscars-550.jpg" alt="Todos los nominados de los Premios Oscar 2021">
-				<div class="segundaCol">
-					<h2>Y los nominados son..</h2>
-					<p>Este año los Oscars han nominado a un total de 41 películas entre las que no están títulos como 'Nunca, casi nunca, a veces, siempre', 'First Cow', 'The Mauritanian', 'Palm Springs', 'Estoy pensando en dejarlo' o 'El hombre invisible' (todas ellas pasan a engrosar la lista de aspirantes al #NoOscarFest6).</p>
+					<p>Comúnmente conocida como Snyder Cut, es una versión del director de la película estadounidense de superhéroes, Liga de la Justicia de 2017. Esta versión de 4 horas de duración es la visión original del director Zack Snyder antes de tener que realizar los cambios estipulados por el estudio y posteriormente abandonar la producción en 2017. Una tortura innecesaria.</p>
 				</div>
 			</div>
 		</div>
@@ -83,24 +83,25 @@
 		function myClick() {
 			var element = document.getElementById("menuPrincipal");
 			if(element.classList.contains("visible")){
-			element.classList.remove("visible");
+				element.classList.remove("visible");
 			}else{
-			element.classList.add("visible");
+				element.classList.add("visible");
 			}
 		}
 		// Modificación del menú en scroll
 		window.onscroll = function() {scrollFunction()};
-
 		function scrollFunction() {
-		  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-		    document.getElementById("header").style.height = "75px";
-		    document.getElementById("logo").style.width = "100px";
-		    document.getElementById("logo").style.left = "calc(50% - 50px)";
-		  } else {
-		    document.getElementById("header").style.height = "105px";
-		    document.getElementById("logo").style.width = "150px";
-		    document.getElementById("logo").style.left = "calc(50% - 75px)";
-		  }
+			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+				document.getElementById("header").style.height = "75px";
+				document.getElementById("header").style.background = "rgba(31,3,58,0.8)";
+				document.getElementById("logo").style.width = "100px";
+				document.getElementById("logo").style.left = "calc(50% - 50px)";
+			} else {
+				document.getElementById("header").style.height = "105px";
+				document.getElementById("header").style.background = "none";
+				document.getElementById("logo").style.width = "150px";
+				document.getElementById("logo").style.left = "calc(50% - 75px)";
+			}
 		}
 	</script>
 	<script src="js/jquery-3.5.1.slim.min.js"></script>

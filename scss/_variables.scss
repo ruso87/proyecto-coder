@@ -11,9 +11,13 @@ $font-regular: 400;
 $font-bold: 700;
 $transition: all 250ms ease-in-out;
 
-$back-img-slide-uno: url(../media/backgrounds/back-fightclub-1920.jpg);
-$back-img-slide-dos: url(../media/backgrounds/back-totoro-1920.jpg);
-$back-img-slide-tres: url(../media/backgrounds/back-fightclub-1920.jpg);
+$back-img-slide-uno: url(../media/backgrounds/back-fightclub-768.jpg);
+$back-img-slide-uno-tbl: url(../media/backgrounds/back-fightclub-1024.jpg);
+$back-img-slide-uno-dsk: url(../media/backgrounds/back-fightclub-1920.jpg);
+
+$back-img-slide-dos: url(../media/backgrounds/back-totoro-768.jpg);
+$back-img-slide-dos-tbl: url(../media/backgrounds/back-totoro-1024.jpg);
+$back-img-slide-dos-dsk: url(../media/backgrounds/back-totoro-1920.jpg);
 
 $font-weight:(
 	"thin": 100,

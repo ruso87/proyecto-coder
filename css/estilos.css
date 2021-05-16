@@ -65,7 +65,7 @@ p {
   font-size: 1rem;
 }
 
-a, img, #menuPrincipal {
+a, img, header, #menuPrincipal {
   -webkit-transition: all 250ms ease-in-out;
   -moz-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
@@ -82,9 +82,14 @@ a:hover {
   color: #ffef00;
 }
 
+a:focus {
+  box-shadow: none !important;
+}
+
 .columnaOchenta {
   width: 80%;
   margin: auto;
+  max-width: 1600px;
 }
 
 .columnas {
@@ -142,7 +147,6 @@ img {
 
 /*HEADER*/
 header {
-  background: rgba(31, 3, 58, 0.8);
   position: fixed;
   width: 100%;
   height: 105px;
@@ -349,18 +353,15 @@ footer .footerInfo .redesList {
   background-size: cover;
   background-position: center;
   align-items: center;
+  background-color: #22073d;
 }
 
 .carousel-item.primer-slide {
-  background-image: url(../media/backgrounds/back-fightclub-1920.jpg);
+  background-image: url(../media/backgrounds/back-fightclub-768.jpg);
 }
 
 .carousel-item.segundo-slide {
-  background-image: url(../media/backgrounds/back-totoro-1920.jpg);
-}
-
-.carousel-item.trecer-slide {
-  background-image: url(../media/backgrounds/back-fightclub-1920.jpg);
+  background-image: url(../media/backgrounds/back-totoro-768.jpg);
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -425,7 +426,7 @@ footer .footerInfo .redesList {
 }
 
 .grilla a:hover img {
-  transform: scale(1.05);
+  transform: scale(1.025);
   box-shadow: 0 0 5px 0 rgba(125, 125, 125, 0.6);
 }
 
@@ -540,7 +541,7 @@ footer .footerInfo .redesList {
   .dosColumnas .primerCol {
     min-width: 365px;
   }
-  .dosColumnas .primerCol .primerCol img {
+  .dosColumnas .primerCol img {
     max-width: 365px;
   }
   .dosColumnas .segundaCol {
@@ -563,6 +564,12 @@ footer .footerInfo .redesList {
   .carousel-item {
     height: calc(100vh - 5em);
     padding-top: 100px;
+  }
+  .carousel-item.primer-slide {
+    background-image: url(../media/backgrounds/back-fightclub-1024.jpg);
+  }
+  .carousel-item.segundo-slide {
+    background-image: url(../media/backgrounds/back-totoro-1024.jpg);
   }
   .carousel-control-next, .carousel-control-prev {
     display: flex;
@@ -632,5 +639,11 @@ footer .footerInfo .redesList {
   .seccion {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+  }
+  .carousel-item.primer-slide {
+    background-image: url(../media/backgrounds/back-fightclub-1920.jpg);
+  }
+  .carousel-item.segundo-slide {
+    background-image: url(../media/backgrounds/back-totoro-1920.jpg);
   }
 }

@@ -1,4 +1,4 @@
-a, img, #menuPrincipal {
+a, img, header, #menuPrincipal {
 	-webkit-transition: $transition;
 	-moz-transition: $transition;
 	-o-transition: $transition;
@@ -12,11 +12,15 @@ a {
 		text-decoration: none;
 		color: $color-detalle-b;
 	}
+	&:focus {
+		box-shadow: none !important;
+	}
 }
 
 .columnaOchenta {
 	width: 80%;
 	margin: auto;
+	max-width: 1600px;
 }
 .columnas {
 	display: inline-block;
@@ -67,7 +71,6 @@ img {
 
 /*HEADER*/
 header {
-	background: rgba(31,3,58,0.8);
 	position: fixed;
 	width: 100%;
 	height: 105px;
@@ -253,14 +256,12 @@ footer {
 	background-size: cover;
 	background-position: center;
 	align-items: center;
+	background-color: $color-oscuro;
 	&.primer-slide {
 		background-image: $back-img-slide-uno
 	}
 	&.segundo-slide {
 		background-image: $back-img-slide-dos
-	}
-	&.trecer-slide {
-		background-image: $back-img-slide-tres
 	}
 }
 .carousel-control-next, .carousel-control-prev {
@@ -316,7 +317,7 @@ footer {
 			margin-bottom: 10px;
 		}
 		&:hover img {
-			transform: scale(1.05);
+			transform: scale(1.025);
 			box-shadow: 0 0 5px 0 rgba(125,125,125,0.6);
 		}
 		h4 {

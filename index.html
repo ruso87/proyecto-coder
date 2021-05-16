@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="No solo un Podcast de Cine. Un Podacast de Cine, donde no tenemos problema en irnos a las manos por el pelo de Bruce Willis.">
 	<meta name="keywords"  content="CINE, PODACAST, PELICULAS, ANALISIS, RELAJADO, ENTRETENIMIENTO, AMIGOS, DIVERSIÓN">
-	<link rel="icon" href="media/favicon.ico"> 
+	<link rel="icon" type="image/png" href="media/favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
@@ -57,15 +57,15 @@
 				</div>
 				<div class="carousel-item segundo-slide">
 					<div class="container contenidoEstreno">
-						<div class="imgEstreno">
-							<a href="https://anchor.fm/cine-a-las-pinas/episodes/Captulo-5---Mi-vecino-Totoro-enq020" target="_blank" rel="noreferrer">
-								<img src="media/programas/04-totoro-550.jpg" alt="Mi vecino Totoro" />
-							</a>
-						</div>
 						<div class="txtEstreno">
 							<h2>Capitulo 5 - Mi vecino Totoro</h2>
 							<p>Charlamos sobre este clásico japonés. Pensamos que había consenso pero no: alguno se aburrió. <span>¿Sobrevalorada u obra maestra?</span></p>
 							<a href="https://anchor.fm/cine-a-las-pinas/episodes/Captulo-5---Mi-vecino-Totoro-enq020" target="_blank" rel="noreferrer" class="btn">ESCUCHAR</a>
+						</div>
+						<div class="imgEstreno">
+							<a href="https://anchor.fm/cine-a-las-pinas/episodes/Captulo-5---Mi-vecino-Totoro-enq020" target="_blank" rel="noreferrer">
+								<img src="media/programas/04-totoro-550.jpg" alt="Mi vecino Totoro" />
+							</a>
 						</div>
 					</div>
 				</div>
@@ -169,24 +169,25 @@
 		function myClick() {
 			var element = document.getElementById("menuPrincipal");
 			if(element.classList.contains("visible")){
-			element.classList.remove("visible");
+				element.classList.remove("visible");
 			}else{
-			element.classList.add("visible");
+				element.classList.add("visible");
 			}
 		}
 		// Modificación del menú en scroll
 		window.onscroll = function() {scrollFunction()};
-
 		function scrollFunction() {
-		  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-		    document.getElementById("header").style.height = "75px";
-		    document.getElementById("logo").style.width = "100px";
-		    document.getElementById("logo").style.left = "calc(50% - 50px)";
-		  } else {
-		    document.getElementById("header").style.height = "105px";
-		    document.getElementById("logo").style.width = "150px";
-		    document.getElementById("logo").style.left = "calc(50% - 75px)";
-		  }
+			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+				document.getElementById("header").style.height = "75px";
+				document.getElementById("header").style.background = "rgba(31,3,58,0.8)";
+				document.getElementById("logo").style.width = "100px";
+				document.getElementById("logo").style.left = "calc(50% - 50px)";
+			} else {
+				document.getElementById("header").style.height = "105px";
+				document.getElementById("header").style.background = "none";
+				document.getElementById("logo").style.width = "150px";
+				document.getElementById("logo").style.left = "calc(50% - 75px)";
+			}
 		}
 	</script>
 	<script src="js/jquery-3.5.1.slim.min.js"></script>
