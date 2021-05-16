@@ -7,9 +7,9 @@
 
 ## Sobre el Proyecto:
 
-El Podcast _"Cine a las Piñas"_, es un programa que trata de cine, humor y análisis entre amigos. Sobre todas las cosas busca entretener al oyente y hacerlo sentir parte de una mesa de amigos que hablan descontracturadamente y sin tapujos sobre peliculas que nos rodean y nos rodearon desde siempre.
+El Podcast _"Cine a las Piñas"_, es un programa que trata de cine, humor y análisis entre amigos. Sobre todas las cosas busca entretener al oyente y hacerlo sentir parte de una mesa de amigos que hablan descontracturadamente y sin tapujos sobre películas que nos rodean y nos rodearon desde siempre.
 
-En el sitio se busca replicar esa sencación de familiaridad hacia el usuario. Desde el logo, la paleta de color, la tipografía elegida y el lenguaje que se utiliza para interactuar con el usuario, se busca proyectar entretenimiento descontracturado pero con un poco de seriedad y tono periodístico, solo un poco. Este podcast se emite por diferentes plataformas de streaming teniendo como base "Anchor", la plataforma que se utiliza como link a todos los programas. Desde los links a redes se comparten también "Spotify", "Apple Podcast" y "Google Podcast", que según las estadísticas del cliente son las plataformas que más se utilizan para escucharlo
+En el sitio se busca replicar esa sensación de familiaridad hacia el usuario. Desde el logo, la paleta de color, la tipografía elegida y el lenguaje que se utiliza para interactuar con el usuario, se busca proyectar entretenimiento descontracturado pero con un poco de seriedad y tono periodístico, solo un poco. Este podcast se emite por diferentes plataformas de streaming teniendo como base "Anchor", la plataforma que se utiliza como link a todos los programas. Desde los links a redes se comparten también "Spotify", "Apple Podcast" y "Google Podcast", que según las estadísticas del cliente son las plataformas que más se utilizan para escucharlo.
 
 ### Lenguajes utilizados:
 
@@ -26,7 +26,7 @@ En el sitio se busca replicar esa sencación de familiaridad hacia el usuario. D
 ### Comentarios sobre el armado:
 
 * **Diseño:** original. No se utilizaron templates. Se hizo uso de Bootstrap para ayudar con la estructura y funcionalidades como el slider.
-* **Imagenes:** las imágenes se trabajaron con Photoshop, utilizando tamaños claves que sirvieran en diferentes dispositivos. Se trabajaron las imágenes con filtros de color para adaptarse a la paleta elegida y filtros de enfoque para que al guardar para web, no se perdiera calidad ni nitidez en las mismas.
+* **Imágenes:** las imágenes se trabajaron con Photoshop, utilizando tamaños claves que sirvieran en diferentes dispositivos. Se trabajaron las imágenes con filtros de color para adaptarse a la paleta elegida y filtros de enfoque para que al guardar para web, no se perdiera calidad ni nitidez en las mismas.
 * **Reproductor:** al momento de esta entrega el Footer sirve como un lugar donde un usuario puede escuchar el último programa. La idea final sería que en el footer se pudiera escuchar cada programa sin cambiar de sitio, y que al navegar diferentes secciones el footer se mantenga reproduciendo para darle la oportunidad al oyente de navegar y escuchar al mismo tiempo. Como por el momento no cuento con el conocimiento para hacerlo se utilizaron links externos a una plataforma de escucha online gratuita.
 * **Formulario:** en un futuro el formulario se enviará a una casilla de correo mediante el uso de php. Por ahora solamente se utiliza una validación sencilla de rellenado de campos.
 

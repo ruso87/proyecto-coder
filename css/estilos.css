@@ -139,6 +139,7 @@ a:focus {
 .btn:hover {
   color: #ffa500;
   background: none;
+  box-shadow: none !important;
 }
 
 img {
